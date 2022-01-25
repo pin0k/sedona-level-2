@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Сайт туристического города Sedona</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a>
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <header class="descripton">
+        <h1 class="descripton__title">Оставьте свой отзыв</h1>
+        <p class="descripton__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
+      <section class="reviews">
+        <h2 class="visually-hidden">Форма добавления отзыва</h2>
+        <form class="form-review" method="post" action="https://echo.htmlacademy.ru/" target="_blank">
+          <fieldset class="form-review__item login-form">
+            <legend class="form-review__title">Представьтесь:</legend>
+            <ul>
+              <li class="login-form__field field">
+                <label class="field__label" for="name" aria-label="Имя">Имя*:</label>
+                <input class="field__input" id="name" name="name" placeholder="Петр" type="text">
+              </li>
+              <li class="login-form__field field">
+                <label class="field__label" for="surname" aria-label="Фамилия">Фамилия*:</label>
+                <input class="field__input" id="surname" name="surname" placeholder="Иванов" type="text">
+              </li>
+              <li class="login-form__field field">
+                <label class="field__label" for="patronymic" aria-label="Отчество">Отчество:</label>
+                <input class="field__input" id="patronymic" name="patronymic" placeholder="Александрович" type="text">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-review__item contact-form">
+            <legend class="form-review__title">Контактная информация:</legend>
+            <ul>
+              <li class="contact-form__field field">
+                <label class="field__label" for="phone" aria-label="Телефон">Контактный телефон*:</label>
+                <input id="phone" name="phone" placeholder="Введите телефон" type="tel">
+              </li>
+              <li class="contact-form__field field">
+                <label class="field__label" for="e-mail" aria-label="Электронная почта">Электронная почта*:</label>
+                <input class="field__input" id="e-mail" name="e-mail" placeholder="Введите e-mail" type="email">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-review__item selection-form">
+            <legend class="form-review__title">Ваше oбщее впечатление:</legend>
+            <ul>
+              <li class="selection-form__field radio">
+                <input class="visually-hidden" id="positive" name="positive" type="radio" value="Положительное впечатление" checked>
+                <label class="radio__label" for="positive" aria-label="Положительное впечатление">Скорее положительное</label>
+              </li>
+              <li class="selection-form__field radio">
+                <input class="visually-hidden" id="negative" name="negative" type="radio" value="Отрицательное впечатление">
+                <label class="radio__label" for="negative" aria-label="Отрицательное впечатление">Скорее отрицательное</label>
+              </li>
+              <li class="selection-form__field radio">
+                <input class="visually-hidden" id="neutral" name="neutral" type="radio" value="Затрудняюсь ответить">
+                <label class="radio__label" for="neutral" aria-label="Затрудняюсь ответить">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-review__item selection-form">
+            <legend class="form-review__title">Посещенные достопримечательности:</legend>
+            <ul>
+              <li class="selection-form__field checkbox">
+                <input class="visually-hidden" id="devils-bridge" name="devils-bridge" type="checkbox" value="Мост Дьявола" checked>
+                <label class="checkbox__label" for="devils-bridge" aria-label="Мост Дьявола">Мост Дьявола</label>
+              </li>
+              <li class="selection-form__field checkbox">
+                <input class="visually-hidden" id="mount-bell" name="mount-bell" type="checkbox" value="Гора-Колокол" checked>
+                <label class="checkbox__label" for="mount-bell" aria-label="Гора-Колокол">Гора-Колокол</label>
+              </li>
+              <li class="selection-form__field checkbox">
+                <input class="visually-hidden" id="slide-park" name="slide-park" type="checkbox" value="Слайд-парк" checked>
+                <label class="checkbox__label" for="slide-park" aria-label="Слайд-парк">Слайд-парк</label>
+              </li>
+              <li class="selection-form__field checkbox">
+                <input class="visually-hidden" id="red-rocks" name="red-rocks" type="checkbox" value="Красные скалы">
+                <label class="checkbox__label" for="red-rocks" aria-label="Красные скалы">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-review__item textarea-form">
+            <legend class="form-review__title">Опишите свои эмоции:</legend>
+            <label class="visually-hidden" for="review-text" aria-label="Что понравилось">Что понравилось:</label>
+            <textarea class="textarea-form__input" id="review-text" name="review-text" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="button form-review__button" type="submit" aria-label="Отправить отзыв">Отправить отзыв</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <b class="contacts__title">#visitSEDONA</b>
+        </div>
+        <div class="page-footer__social social">
+          <h2 class="visually-hidden">Социальыне сети</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
