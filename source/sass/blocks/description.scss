@@ -1,0 +1,23 @@
+.description {
+  background-image: url("../../img/index/back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-width: 320px;
+  height: 158px;
+  text-align: center;
+}
+
+.description-wrapper {
+  min-width: 320px;
+  max-width: 434px;
+}
+
+.description__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.description__text {
+  line-height: 24px;
+}

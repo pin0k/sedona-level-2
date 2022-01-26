@@ -1,7 +1,10 @@
 .intro {
-  background-image: url("../../img/index/background-intro@1x.jpg");
+  background-image: url("../../img/index/back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 320px;
   max-width: 1200px;
-  height: 518px;
+  height: 389px;
   margin: 0;
   margin-bottom: 55px;
 }
@@ -15,8 +18,8 @@
 
 .intro__image {
   position: absolute;
-  width: 460px;
-  height: 350px;
+  width: 282px;
+  height: 214px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

@@ -1,0 +1,16 @@
+.field__label {
+  line-height: 26px;
+}
+
+.field__input {
+  text-transform: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $basic-dark;
+}
+
+.field__input::-moz-placeholder,
+.field__input::-webkit-input-placeholder {
+  color: $basic-dark;
+}

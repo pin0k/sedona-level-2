@@ -1,6 +1,11 @@
+// Globals
+
 @import "global/global.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
+
+// Blocks
+
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/intro.scss";
@@ -9,3 +14,8 @@
 @import "blocks/capture-unit.scss";
 @import "blocks/button.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/description.scss";
+@import "blocks/form-review.scss";
+@import "blocks/field.scss";
+@import "blocks/selection-form.scss";
+@import "blocks/textarea-form.scss";

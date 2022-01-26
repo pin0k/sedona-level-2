@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Сайт туристического города Sedona</title>
   </head>
   <body class="page__body">
@@ -40,16 +41,18 @@
       </nav>
     </header>
     <main class="page-main">
-      <header class="descripton">
-        <h1 class="descripton__title">Оставьте свой отзыв</h1>
-        <p class="descripton__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <header class="description">
+        <div class="description-wrapper">
+          <h1 class="description__title">Оставьте свой отзыв</h1>
+          <p class="description__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
       </header>
-      <section class="reviews">
+      <section class="page-reviews reviews">
         <h2 class="visually-hidden">Форма добавления отзыва</h2>
         <form class="form-review" method="post" action="https://echo.htmlacademy.ru/" target="_blank">
           <fieldset class="form-review__item login-form">
             <legend class="form-review__title">Представьтесь:</legend>
-            <ul>
+            <ul class="form-review__list">
               <li class="login-form__field field">
                 <label class="field__label" for="name" aria-label="Имя">Имя*:</label>
                 <input class="field__input" id="name" name="name" placeholder="Петр" type="text">
@@ -66,10 +69,10 @@
           </fieldset>
           <fieldset class="form-review__item contact-form">
             <legend class="form-review__title">Контактная информация:</legend>
-            <ul>
+            <ul class="form-review__list">
               <li class="contact-form__field field">
                 <label class="field__label" for="phone" aria-label="Телефон">Контактный телефон*:</label>
-                <input id="phone" name="phone" placeholder="Введите телефон" type="tel">
+                <input class="field__input" id="phone" name="phone" placeholder="Введите телефон" type="tel">
               </li>
               <li class="contact-form__field field">
                 <label class="field__label" for="e-mail" aria-label="Электронная почта">Электронная почта*:</label>
@@ -79,7 +82,7 @@
           </fieldset>
           <fieldset class="form-review__item selection-form">
             <legend class="form-review__title">Ваше oбщее впечатление:</legend>
-            <ul>
+            <ul class="form-review__list">
               <li class="selection-form__field radio">
                 <input class="visually-hidden" id="positive" name="positive" type="radio" value="Положительное впечатление" checked>
                 <label class="radio__label" for="positive" aria-label="Положительное впечатление">Скорее положительное</label>
@@ -96,7 +99,7 @@
           </fieldset>
           <fieldset class="form-review__item selection-form">
             <legend class="form-review__title">Посещенные достопримечательности:</legend>
-            <ul>
+            <ul class="form-review__list">
               <li class="selection-form__field checkbox">
                 <input class="visually-hidden" id="devils-bridge" name="devils-bridge" type="checkbox" value="Мост Дьявола" checked>
                 <label class="checkbox__label" for="devils-bridge" aria-label="Мост Дьявола">Мост Дьявола</label>
