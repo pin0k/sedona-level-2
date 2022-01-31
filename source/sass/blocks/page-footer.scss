@@ -1,5 +1,13 @@
 .page-footer {
   padding: 36px 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    align-items: center;
+  }
 }
 
 .contacts__title {

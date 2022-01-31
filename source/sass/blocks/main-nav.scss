@@ -1,0 +1,21 @@
+.main-nav {
+  background-color: $basic-blue;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    color: $basic-dark;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

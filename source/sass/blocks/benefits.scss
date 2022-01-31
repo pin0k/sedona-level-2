@@ -2,8 +2,27 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: $basic-white;
+  color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+}
+
+.benefits__item {
+  text-align: left;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.benefits__title {
+  margin: 0;
 }
 
 .benefits__description {
-  margin-bottom: 0;
+  margin: 0;
 }

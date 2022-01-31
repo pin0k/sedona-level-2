@@ -1,4 +1,25 @@
 .page-header {
   font-weight: bold;
   line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 389px;
+  background-image: url("../../img/index/back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/index/background-intro@1x.jpg");
+  }
+}
+
+.page-header__logo {
+  height: 84px;
+  position: absolute;
+  left: calc(50% - 51px);
+
+  @media (min-width: $desktop-width) {
+    height: 97px;
+    left: calc(50% - 94px);
+  }
 }

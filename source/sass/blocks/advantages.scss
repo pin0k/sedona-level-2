@@ -23,6 +23,11 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages__item {
@@ -37,6 +42,31 @@
   margin: 0;
 }
 
+.advantages__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+}
+
+.advantages__item--image:nth-child(2n) .advantages__image {
+  order: -1;
+}
+
 .advantages__item--image {
   background-color: $basic-blue;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.advantages__city-benefits {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
 }
