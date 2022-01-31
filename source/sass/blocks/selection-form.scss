@@ -6,3 +6,13 @@
   line-height: 26px;
   color: $basic-dark;
 }
+
+.selection-form__field--attractions {
+  @media (min-width: $tablet-width) {
+    width: 50%;;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
+}

@@ -6,40 +6,40 @@
     <title>Сайт туристического города Sedona</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город Седона">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="/">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <header class="description">
-        <div class="description-wrapper">
-          <h1 class="description__title">Пустая страница</h1>
-          <p class="description__text">Страница находится в разработке</p>
-        </div>
+    <div class="page__wrapper">
+      <header class="page-header">
+        <a class="page-header__logo">
+          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город Седона">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="/">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
       </header>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <main class="page-inner">
+        <header class="description">
+          <div class="description-wrapper">
+            <h1 class="description__title">Пустая страница</h1>
+            <p class="description__text">Страница находится в разработке</p>
+          </div>
+        </header>
+      </main>
+      <footer class="page-footer">
         <div class="page-footer__contacts contacts">
           <b class="contacts__title">#visitSEDONA</b>
         </div>
@@ -58,10 +58,11 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <p class="copyright__text">Разработано:
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </p>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

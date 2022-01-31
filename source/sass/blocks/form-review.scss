@@ -1,11 +1,36 @@
+.form-review {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .form-review__item {
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.form-review__item--logins,
+.form-review__item--impressions {
+  @media (min-width: $tablet-width) {
+    grid-column: span 1;
+  }
+}
+
+.form-review__item--impressions {
+  @media (min-width: $tablet-width) {
+   order: -1;
+  }
 }
 
 .form-review__title {
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -13,4 +38,29 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.form-review__list--contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.form-review__list--attractions {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.form-review__footnote {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: right;
+  }
 }
