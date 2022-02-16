@@ -1,12 +1,15 @@
 // Colors
 
-$basic-white: #ffffff;
+$basic-white: rgba(255, 255, 255, 1);
 $basic-grey-100: #f2f2f2;
 $basic-grey-200: #eeeeee;
 $basic-blue: #81b3d2;
+$blue-hover:#669ec0;
+$blue-active: #5496bd;
 $basic-dark: #000000;
 $basic-dark-shadow: rgba(0, 1, 1, 0.2);
 
 // Viewports
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$mobile-width-only: 767px;

@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 36px 0;
+  margin: 36px 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -10,6 +10,13 @@
   }
 }
 
+.page-footer__contacts {
+  margin-bottom: 33px;
+}
+
+.page-footer__social {
+  margin-bottom: 33px;
+}
 .contacts__title {
   font-size: 21px;
   font-weight: bold;
@@ -18,4 +25,5 @@
 
 .copyright__text {
   line-height: 26px;
+  margin: 0;
 }

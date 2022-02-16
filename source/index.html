@@ -2,37 +2,43 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/style.css">
     <title>Сайт туристического города Sedona</title>
   </head>
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <a class="page-header__logo">
-          <img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Город Седона">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <a class="main-nav__logo">
+              <img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Город Седона">
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">Фото и видео</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
       </header>
       <main class="page-main">
         <h1 class="visually-hidden">Туристический город Седона</h1>
+        <section class="intro">
+          <div class="intro__wrapper">
+            <h2 class="visually-hidden">Добро пожаловать на сайт Седоны</h2>
+          </div>
+        </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества города Седона</h2>
           <div class="advantages__wrapper">
@@ -50,25 +56,19 @@
                 <p class="advantages__number">— №1 —</p>
                 <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="advantages__image"src="img/index/photo-city@1x1.jpg" srcset="" width="520" height="260" alt="Первое преимущество Седоны">
+              <img class="advantages__image" src="img/index/photo-city@1x1.jpg" width="520" height="260" alt="Первое преимущество Седоны">
               <ul class="advantages__city-benefits benefits">
                 <li class="benefits__item benefits__item--housing">
                   <h4 class="benefits__title">Жилье</h4>
-                  <p class="benefits__description">
-                    Рекомендуем пожить в настоящем мотеле, все как в кино!
-                  </p>
+                  <p class="benefits__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="benefits__item benefits__item--souvenirs">
                   <h4 class="benefits__title">Сувениры</h4>
-                  <p class="benefits__description">
-                    Не только китайского, но и местного<br> производства!
-                  </p>
+                  <p class="benefits__description">Не только китайского, но и местного<br> производства!</p>
                 </li>
                 <li class="benefits__item benefits__item--meal">
                   <h4 class="benefits__title">Еда</h4>
-                  <p class="benefits__description">
-                    Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!
-                  </p>
+                  <p class="benefits__description">сегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
@@ -78,7 +78,7 @@
                 <p class="advantages__number">— №2 —</p>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages__image"src="img/index/photo-bridge@1x1.jpg" srcset="" width="520" height="260" alt="Первое преимущество Седоны">
+              <img class="advantages__image" src="img/index/photo-bridge@1x1.jpg" width="520" height="260" alt="Первое преимущество Седоны">
             </li>
             <li class="advantages__item">
               <div class="advantages__item-wrapper">
@@ -107,7 +107,7 @@
           <div class="capture-unit__wrapper">
             <h2 class="capture-unit__title">Заинтересовались?</h2>
             <p class="capture-unit__description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="button" href="#">Найти гостиницу</a>
+            <a class="button capture-unit__button" href="#">Найти гостиницу</a>
           </div>
         </section>
         <section class="map">
@@ -123,22 +123,50 @@
           <h2 class="visually-hidden">Социальыне сети</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Twitter</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Facebook</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <p class="copyright__text">Разработано
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">HTML Academy</span>
+              <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 35">
+                <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/>
+              </svg>
+            </a>
           </p>
         </div>
       </footer>
     </div>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

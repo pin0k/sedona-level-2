@@ -3,24 +3,28 @@
   background-color: $basic-grey-100;
 }
 
-.page__wrapper {
-  background-color: $basic-white;
-  box-shadow: 0px 5px 15px $basic-dark-shadow;
-  width: 320px;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-  min-height: 100vh;
-  margin: 0 auto;
+.page__body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
+  background-color: $basic-white;
   color: $basic-dark;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.page__wrapper {
+  box-shadow: 0px 5px 15px $basic-dark-shadow;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+  min-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    min-width: 768px;
   }
 
   @media (min-width: $desktop-width) {

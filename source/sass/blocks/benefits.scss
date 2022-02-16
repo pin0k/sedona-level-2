@@ -1,7 +1,6 @@
 .benefits {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   background-color: $basic-white;
   color: $basic-dark;
 
@@ -14,15 +13,49 @@
 
 .benefits__item {
   text-align: left;
+  position: relative;
+  margin: 15px 0 15px 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: -50px;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: center;
   }
 }
 
+.benefits__item--housing {
+  &::before {
+    background-image: url("../../img/index/icon-house.png");
+  }
+}
+
+.benefits__item--souvenirs {
+  &::before {
+    background-image: url("../../img/index/icon-gift.png");
+  }
+}
+
+.benefits__item--meal {
+  &::before {
+    background-image: url("../../img/index/icon-burger.png");
+  }
+}
+
 .benefits__title {
   margin: 0;
+  padding-top: 11px;
 }
 
 .benefits__description {
   margin: 0;
+  padding-top: 20px;
 }

@@ -1,10 +1,114 @@
 .main-nav {
-  background-color: $basic-blue;
-  color: $basic-white;
+  position: relative;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    min-height: 56px;
+  }
+}
+
+.main-nav__logo {
+  width: 102px;
+  height: 84px;
+  position: absolute;
+  left: calc(50% - 51px);
+  bottom: -84px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 97px;
+    left: calc(50% - 51px);
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 4px;
+  background-color: $basic-blue;
+  box-shadow: 0 9px 0 0 $basic-blue, 0 18px 0 0 $basic-blue;
+
+  &:hover::before {
+    background-color: red;
+  }
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.main-nav--closed .main-nav__toggle:active::before,
+.main-nav--closed .main-nav__toggle:focus::before,
+.main-nav--closed .main-nav__toggle:focus-visible::before {
+  opacity: 0.3;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 23px;
+    height: 4px;
     background-color: $basic-white;
-    color: $basic-dark;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:focus-visible::before,
+  &:focus-visible::after {
+    opacity: 0.3;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+    box-shadow: none;
   }
 }
 
