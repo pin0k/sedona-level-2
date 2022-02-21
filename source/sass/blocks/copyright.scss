@@ -1,6 +1,13 @@
+.page-footer__copyright {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .copyright__text {
   display: inline-flex;
   align-items: center;
+  line-height: 26px;
+  margin: 0;
 }
 
 .copyright__link {
@@ -8,4 +15,10 @@
   margin-left: 15px;
   width: 27px;
   height: 34px;
+}
+
+.copyright__logo {
+  &:hover path {
+    fill: $basic-blue;
+  }
 }

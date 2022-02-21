@@ -7,3 +7,25 @@
   background-color: $basic-blue;
   display: block;
 }
+
+.button {
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+  }
+
+  &:disabled {
+    background-color: $grey-disabled;
+  }
+}
+
+.button--disabled {
+  background-color: $grey-disabled;
+  &:hover,
+  &:active {
+    background-color: $grey-disabled;
+  }
+}
