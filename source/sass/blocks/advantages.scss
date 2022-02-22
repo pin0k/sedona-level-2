@@ -30,6 +30,7 @@
   margin: 0;
   padding: 0;
   position: relative;
+  counter-reset: advantages;
 
   @media (max-width: $mobile-width-only) {
     &::before {
@@ -55,6 +56,7 @@
 .advantages__item {
   background-color: $basic-grey-200;
   padding: 26px 20px 24px 20px;
+  counter-increment: advantages;
 
   &:nth-child(n+3):not(:last-child) {
     position: relative;
@@ -140,6 +142,13 @@
   margin: 0;
   font-size: 14px;
   line-height: 21px;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "— №" counter(advantages) " —";
+    margin-bottom: 21px;
+  }
 }
 
 .advantages__city-benefits {

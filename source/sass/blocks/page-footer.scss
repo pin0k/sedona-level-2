@@ -10,6 +10,13 @@
   }
 }
 
+.page-footer__contacts,
+.page-footer__social {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 33px;
+  }
+}
+
 .contacts__title {
   font-size: 21px;
   font-weight: bold;

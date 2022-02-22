@@ -12,6 +12,12 @@
 
 .capture-unit__description {
   line-height: 18px;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .capture-unit__button {
