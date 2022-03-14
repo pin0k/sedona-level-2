@@ -1,5 +1,29 @@
 .description {
   text-align: center;
+  padding-top: 56px;
+}
+
+.description-wrapper {
+  background-color: $grey-disabled;
+  width: 100%;
+  min-height: 389px;
+  position: relative;
+  background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 1200px, cover;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 282px;
+    height: 214px;
+    left: calc(50% - 141px);
+    top: 90px;
+    background-image: url("../../img/index/text-index-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .description__title {
