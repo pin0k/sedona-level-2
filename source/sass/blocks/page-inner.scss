@@ -1,18 +1,6 @@
 .page-inner {
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 648px;
-  }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-  }
-}
-
-
-.page-inner--form {
-  @media (min-width: $desktop-width) {
-    width: 960px;
   }
 }
