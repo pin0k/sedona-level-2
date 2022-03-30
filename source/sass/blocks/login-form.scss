@@ -1,0 +1,36 @@
+.login-form__field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.login-form__label {
+  line-height: 26px;
+  color: $basic-grey-500;
+  margin-right: 15px;
+}
+
+.login-form__input {
+  border: 0;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $basic-dark;
+  box-sizing: border-box;
+  padding: 18px 10px 14px 21px;
+  background-color: $basic-grey-100;
+  width: 100%;
+  flex-grow: 2;
+}
+
+.login-form__input::-moz-placeholder,
+.login-form__input::-webkit-input-placeholder {
+  color: $basic-dark;
+}
+

@@ -39,36 +39,36 @@
             <p class="description__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
         </header>
-        <section class="page-reviews container reviews">
+        <section class="page-reviews reviews">
           <h2 class="visually-hidden">Форма добавления отзыва</h2>
           <form class="form-review" method="post" action="https://echo.htmlacademy.ru/" target="_blank">
             <fieldset class="form-review__item form-review__item--logins login-form">
               <legend class="form-review__title">Представьтесь:</legend>
               <ul class="form-review__list">
-                <li class="login-form__field field">
-                  <label class="field__label" for="name" aria-label="Имя">Имя*:</label>
-                  <input class="field__input" id="name" name="name" placeholder="Петр" type="text">
+                <li class="login-form__field">
+                  <label class="login-form__label" for="name" aria-label="Имя">Имя*:</label>
+                  <input class="login-form__input" id="name" name="name" placeholder="Петр" type="text" required>
                 </li>
                 <li class="login-form__field field">
-                  <label class="field__label" for="surname" aria-label="Фамилия">Фамилия*:</label>
-                  <input class="field__input" id="surname" name="surname" placeholder="Иванов" type="text">
+                  <label class="login-form__label" for="surname" aria-label="Фамилия">Фамилия*:</label>
+                  <input class="login-form__input" id="surname" name="surname" placeholder="Иванов" type="text" required>
                 </li>
                 <li class="login-form__field field">
-                  <label class="field__label" for="patronymic" aria-label="Отчество">Отчество:</label>
-                  <input class="field__input" id="patronymic" name="patronymic" placeholder="Александрович" type="text">
+                  <label class="login-form__label" for="patronymic" aria-label="Отчество">Отчество:</label>
+                  <input class="login-form__input" id="patronymic" name="patronymic" placeholder="Александрович" type="text">
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form-review__item contact-form">
-              <legend class="form-review__title">Контактная информация:</legend>
+              <legend class="form-review__title form-review__title--line">Контактная информация:</legend>
               <ul class="form-review__list form-review__list--contacts">
                 <li class="contact-form__field">
-                  <label class="field__label" for="phone" aria-label="Телефон">Контактный телефон*:</label>
-                  <input class="field__input" id="phone" name="phone" placeholder="Введите телефон" type="tel">
+                  <label class="contact-form__label" for="phone" aria-label="Телефон"><span>Контактный</span> телефон*:</label>
+                  <input class="contact-form__input contact-form__input--phone" id="phone" name="phone" placeholder="Введите телефон" type="tel" required>
                 </li>
-                <li class="contact-form__field field">
-                  <label class="field__label" for="e-mail" aria-label="Электронная почта">Электронная почта*:</label>
-                  <input class="field__input" id="e-mail" name="e-mail" placeholder="Введите e-mail" type="email">
+                <li class="contact-form__field">
+                  <label class="contact-form__label" for="e-mail" aria-label="Электронная почта">Электронная почта*:</label>
+                  <input class="contact-form__input contact-form__input--email" id="e-mail" name="e-mail" placeholder="Введите e-mail" type="email" required>
                 </li>
               </ul>
             </fieldset>
@@ -76,48 +76,66 @@
               <legend class="form-review__title">Ваше oбщее впечатление:</legend>
               <ul class="form-review__list">
                 <li class="selection-form__field radio">
-                  <input class="visually-hidden" id="positive" name="positive" type="radio" value="Положительное впечатление" checked>
+                  <input class="visually-hidden radio__input" id="positive" name="positive" type="radio" value="Положительное впечатление" checked>
                   <label class="radio__label" for="positive" aria-label="Положительное впечатление">Скорее положительное</label>
                 </li>
                 <li class="selection-form__field radio">
-                  <input class="visually-hidden" id="negative" name="negative" type="radio" value="Отрицательное впечатление">
+                  <input class="visually-hidden radio__input" id="negative" name="negative" type="radio" value="Отрицательное впечатление">
                   <label class="radio__label" for="negative" aria-label="Отрицательное впечатление">Скорее отрицательное</label>
                 </li>
                 <li class="selection-form__field radio">
-                  <input class="visually-hidden" id="neutral" name="neutral" type="radio" value="Затрудняюсь ответить">
+                  <input class="visually-hidden radio__input" id="neutral" name="neutral" type="radio" value="Затрудняюсь ответить">
                   <label class="radio__label" for="neutral" aria-label="Затрудняюсь ответить">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form-review__item selection-form">
-              <legend class="form-review__title">Посещенные достопримечательности:</legend>
+              <legend class="form-review__title form-review__title--line">Посещенные <br>достопримечательности:</legend>
               <ul class="form-review__list form-review__list--attractions">
                 <li class="selection-form__field selection-form__field--attractions checkbox">
-                  <input class="visually-hidden" id="devils-bridge" name="devils-bridge" type="checkbox" value="Мост Дьявола" checked>
+                  <input class="visually-hidden checkbox__input" id="devils-bridge" name="devils-bridge" type="checkbox" value="Мост Дьявола" checked>
                   <label class="checkbox__label" for="devils-bridge" aria-label="Мост Дьявола">Мост Дьявола</label>
                 </li>
                 <li class="selection-form__field selection-form__field--attractions checkbox">
-                  <input class="visually-hidden" id="mount-bell" name="mount-bell" type="checkbox" value="Гора-Колокол" checked>
+                  <input class="visually-hidden checkbox__input" id="mount-bell" name="mount-bell" type="checkbox" value="Гора-Колокол" checked>
                   <label class="checkbox__label" for="mount-bell" aria-label="Гора-Колокол">Гора-Колокол</label>
                 </li>
                 <li class="selection-form__field selection-form__field--attractions checkbox">
-                  <input class="visually-hidden" id="slide-park" name="slide-park" type="checkbox" value="Слайд-парк" checked>
+                  <input class="visually-hidden checkbox__input" id="slide-park" name="slide-park" type="checkbox" value="Слайд-парк" checked>
                   <label class="checkbox__label" for="slide-park" aria-label="Слайд-парк">Слайд-парк</label>
                 </li>
                 <li class="selection-form__field selection-form__field--attractions checkbox">
-                  <input class="visually-hidden" id="red-rocks" name="red-rocks" type="checkbox" value="Красные скалы">
+                  <input class="visually-hidden checkbox__input" id="red-rocks" name="red-rocks" type="checkbox" value="Красные скалы">
                   <label class="checkbox__label" for="red-rocks" aria-label="Красные скалы">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form-review__item textarea-form">
-              <legend class="form-review__title">Опишите свои эмоции:</legend>
+              <legend class="form-review__title form-review__title--line">Опишите свои эмоции:</legend>
               <label class="visually-hidden" for="review-text" aria-label="Что понравилось">Что понравилось:</label>
               <textarea class="textarea-form__input" id="review-text" name="review-text" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button class="button form-review__button" type="submit" aria-label="Отправить отзыв">Отправить отзыв</button>
             <p class="form-review__footnote">* — обязательные поля</p>
           </form>
+        </section>
+        <section class="modal modal-failure modal-failure--closed">
+          <div class="modal__wrapper">
+            <h2 class="modal__title">Что-то пошло <br>не так!</h2>
+            <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          </div>
+          <div class="button-wrapper">
+            <button class="button modal__button" type="button" aria-label="Закрыть ошибку и проверить заполнение обязательных полей">Ок</button>
+          </div>
+        </section>
+        <section class="modal modal-success modal-success--closed">
+          <div class="modal__wrapper">
+            <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+            <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="button-wrapper button-wrapper--grey">
+            <button class="button modal__button" type="button" aria-label="Закрыть ошибку и проверить заполнение обязательных полей">Закрыть окно</button>
+          </div>
         </section>
       </main>
       <footer class="page-footer">

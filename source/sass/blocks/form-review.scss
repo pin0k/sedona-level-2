@@ -1,12 +1,49 @@
 .form-review {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
+    margin-bottom: 61px;
   }
+
 }
 
 .form-review__item {
   border: 0;
+  margin: 0;
+  padding: 0 0 30px 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &:first-of-type {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 292px;
+        left: 0;
+        top: -75px;
+        background-color: $basic-grey-600;
+      }
+    }
+  }
+
+  &:not(:last-of-type) {
+    @media (max-width: $mobile-width-only) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: calc(100% + 40px);
+        height: 1px;
+        left: -20px;
+        bottom: 0;
+        background-color: $basic-grey-300;
+      }
+    }
+  }
+
+
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
@@ -26,12 +63,53 @@
   }
 }
 
+.form-review__item--logins {
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+  }
+}
+
 .form-review__title {
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
-  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.form-review__title--line {
+  position: relative;;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $basic-grey-600;
+    }
+
+    &::before {
+      width: calc(50% - 200px);
+      height: 1px;
+      left: 0;
+    }
+
+    &::after {
+      width: calc(50% - 200px);
+      height: 1px;
+      right: 0;
+    }
+  }
 }
 
 .form-review__list {
@@ -44,7 +122,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 }
 
@@ -52,7 +130,27 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.form-review__button {
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 18px 33px 14px 32px;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 480px;
   }
 }
 

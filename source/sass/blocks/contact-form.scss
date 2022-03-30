@@ -1,5 +1,70 @@
 .contact-form__field {
-  @media (min-width: $desktop-width) {
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  margin-bottom: 14px;
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 2;
+    margin-bottom: 0;
+
+    &:nth-child(odd) {
+      margin-right: 78px;
+    }
+  }
+}
+
+.contact-form__label {
+  line-height: 26px;
+  color: $basic-grey-500;
+  margin: 0 0 8px 21px;
+
+  @media (min-width: $desktop-width) {
+    span {
+      display: none;
+    }
+
+    margin: 0 18px 8px 0;
+  }
+}
+
+.contact-form__input {
+  position: relative;
+  border: 0;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $basic-dark;
+  box-sizing: border-box;
+  padding: 18px 60px 14px 21px;
+  background-color: $basic-grey-100;
+  width: 100%;
+  background-position: right 20px top 50%, 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    width: 257px;
+    flex-grow: 2;
+  }
+}
+
+.contact-form__input--phone {
+  background-image: url("../../img/icon/icon-phone.svg"),
+                    linear-gradient(to right, $basic-grey-100 calc(100% - 58px), $basic-grey-350 calc(100% - 58px) 100%);
+  background-size: 18px 18px, 100% 100%;
+}
+
+.contact-form__input--email {
+  background-image: url("../../img/icon/icon-mail.svg"),
+                    linear-gradient(to right, $basic-grey-100 calc(100% - 58px), $basic-grey-350 calc(100% - 58px) 100%);
+  background-size: 16px 12px, 100% 100%;
 }

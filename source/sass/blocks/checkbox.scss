@@ -1,0 +1,29 @@
+.checkbox__label {
+  position: relative;
+  padding: 15px 0 0 79px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 46px;
+    top: 0;
+    left: 0;
+    background-color: $basic-grey-100;
+    border: 5px solid $basic-grey-100;
+    border-radius: 5px;
+  }
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  position: absolute;
+    content: "";
+    width: 24px;
+    height: 17px;
+    top: 20px;
+    left: 17px;
+    background-image: url("../../img/icon/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 23px 16px;
+}

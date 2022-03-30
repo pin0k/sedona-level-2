@@ -7,12 +7,44 @@
   color: $basic-dark;
 }
 
-.selection-form__field--attractions {
-  @media (min-width: $tablet-width) {
-    width: 50%;;
+.selection-form__field {
+  min-height: 48px;
+  margin: 21px 0;
+  display: flex;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    margin: 0;
+  }
+}
+
+.selection-form__field--attractions {
+  @media (min-width: $tablet-width) {
+    flex-basis: 35%;
+
+    &:nth-child(odd) {
+      margin-right: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: auto;
+    min-width: 226px;
+
+    &:nth-child(odd),
+    &:nth-child(even) {
+      margin-right: 14px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }

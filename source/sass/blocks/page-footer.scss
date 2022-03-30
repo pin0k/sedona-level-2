@@ -7,6 +7,13 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     align-items: center;
+    margin: 36px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 36px auto;
+    width: 100%;
+    max-width: 960px;
   }
 }
 
@@ -21,4 +28,19 @@
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+}
+
+.page-footer__contacts {
+  text-align: left;
+}
+
+.page-footer__copyright {
+  text-align: right;
+}
+
+.page-footer__contacts,
+.page-footer__copyright {
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
 }
