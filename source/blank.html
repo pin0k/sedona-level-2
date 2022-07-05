@@ -14,7 +14,10 @@
     <div class="page__wrapper">
       <header class="page-header">
         <a class="page-header__logo">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
+            <img class="main-nav__image" src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Город Седона">
+          </picture>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
