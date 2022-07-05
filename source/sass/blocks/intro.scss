@@ -14,7 +14,11 @@
   background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 1200px, cover;
+  background-size: cover, 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/back-mobile@2x.jpg");
+  }
 
   &::before {
     position: absolute;
@@ -27,18 +31,32 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/text-index-mobile@2x.png");
+      background-size: contain;
+    }
+
     @media (min-width: $tablet-width) {
       width: 461px;
       height: 350px;
       top: 77px;
       left: calc(50% - 230px);
       background-image: url("../../img/index/text-index-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/index/text-index-tablet@2x.png");
+        background-size: contain;
+      }
     }
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/background-intro@1x.jpg");
-    background-size: 1200px, auto;
     min-height: 518px;
+    background-size: 100%, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/background-intro@2x.jpg");
+    }
   }
 }

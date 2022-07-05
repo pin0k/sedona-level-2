@@ -20,9 +20,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 187px;
     height: 97px;
-    left: calc(50% - 51px);
+    left: calc(50% - 93px);
   }
+}
+
+.main-nav__image {
+  width: 100%;
 }
 
 .main-nav__toggle {

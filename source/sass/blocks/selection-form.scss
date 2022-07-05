@@ -20,9 +20,6 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
 }
 
 .selection-form__field--attractions {
@@ -37,6 +34,7 @@
   @media (min-width: $desktop-width) {
     flex-basis: auto;
     min-width: 226px;
+    margin: 0;
 
     &:nth-child(odd),
     &:nth-child(even) {
