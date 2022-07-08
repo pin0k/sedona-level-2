@@ -2,6 +2,7 @@
   margin: 0;
   padding-bottom: 10px;
   position: relative;
+  min-height: 200px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
