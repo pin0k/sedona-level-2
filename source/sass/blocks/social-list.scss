@@ -14,40 +14,14 @@
 }
 
 .social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $basic-blue;
   width: 46px;
   height: 48px;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 19px;
-    left: 13px;
-    top: 14px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
-.social__link--twitter {
-  &::before {
-    background-image: url("../../img/icon/icon-twitter.svg");
-  }
+.social__link svg {
+  fill: $basic-white;
 }
 
-.social__link--facebook {
-  &::before {
-    background-image: url("../../img/icon/icon-facebook.svg");
-  }
-}
-
-.social__link--youtube {
-  &::before {
-    background-image: url("../../img/icon/icon-youtube.svg");
-  }
+.social__link:focus svg {
+  opacity: 0.3;
 }

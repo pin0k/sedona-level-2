@@ -16,8 +16,9 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <a class="main-nav__logo" href="/">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
-              <img class="main-nav__image" src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Город Седона">
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png 1x, img/logotype-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.png 1x, img/logotype-tablet@2x.png 2x">
+              <img class="main-nav__image" src="img/logotype-mobile.png" srcset="img/logotype-mobile@2x.png 2x" width="102" height="84" alt="Логотип Город Седона">
             </picture>
           </a>
           <button class="main-nav__toggle" type="button">
@@ -52,6 +53,9 @@
             <li class="gallery-list__item gallery-card">
               <figure class="gallery-card__wrapper">
                 <picture class="gallery-card__image-top">
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-1-desktop.webp 1x, img/photo/photo-1-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo/photo-1-tablet.webp 1x, img/photo/photo-1-tablet@2x.webp 2x">
+                  <source media="(min-width: 320px)" srcset="img/photo/photo-1-mobile.webp 1x, img/photo/photo-1-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo/photo-1-desktop@1x.jpg 1x, img/photo/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo/photo-1-tablet@1x.jpg 1x, img/photo/photo-1-tablet@2x.jpg 2x">
                   <img class="gallery-card__image gallery-card__image--top" src="img/photo/photo-1-mobile@1x.jpg" srcset="img/photo/photo-1-mobile@2x.jpg 2x" alt="Фотография Неродные просторы" width="100%" height="100%">
@@ -60,8 +64,8 @@
                   <h3 class="gallery-card__title">Неродные просторы</h3>
                   <p class="gallery-card__author">Автор фото: Борис</p>
                   <p class="gallery-card__count-likes">
-                    <svg class="gallery-card__likes" fill="none" viewBox="0 0 23 21" width="23" height="21">
-                      <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
+                    <svg class="gallery-card__likes" width="23" height="21">
+                      <use xlink:href="img/sprite.svg#like"></use>
                     </svg>
                     <span class="gallery-card__counter">1350</span>
                   </p>
@@ -79,8 +83,8 @@
                   <h3 class="gallery-card__title">Местная растительность</h3>
                   <p class="gallery-card__author">Автор фото: Сергей</p>
                   <p class="gallery-card__count-likes">
-                    <svg class="gallery-card__likes" fill="none" viewBox="0 0 23 21" width="23" height="21">
-                      <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
+                    <svg class="gallery-card__likes" width="23" height="21">
+                      <use xlink:href="img/sprite.svg#like"></use>
                     </svg>
                     <span class="gallery-card__counter">143</span>
                   </p>
@@ -98,8 +102,8 @@
                   <h3 class="gallery-card__title">Дорога на север</h3>
                   <p class="gallery-card__author">Автор фото: Петр</p>
                   <p class="gallery-card__count-likes">
-                    <svg class="gallery-card__likes" fill="none" viewBox="0 0 23 21" width="23" height="21">
-                      <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
+                    <svg class="gallery-card__likes" width="23" height="21">
+                      <use xlink:href="img/sprite.svg#like"></use>
                     </svg>
                     <span class="gallery-card__counter">96</span>
                   </p>
@@ -117,8 +121,8 @@
                   <h3 class="gallery-card__title">Мост дьявола</h3>
                   <p class="gallery-card__author">Автор фото: Антон</p>
                   <p class="gallery-card__count-likes">
-                    <svg class="gallery-card__likes" fill="none" viewBox="0 0 23 21" width="23" height="21">
-                      <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
+                    <svg class="gallery-card__likes" width="23" height="21">
+                      <use xlink:href="img/sprite.svg#like"></use>
                     </svg>
                     <span class="gallery-card__counter">254</span>
                   </p>
@@ -144,20 +148,20 @@
               <div class="panel__controls">
                 <button class="panel-button panel-button--repeat" type="button">
                   <span class="visually-hidden">Повторить</span>
-                  <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" width="16" height="20">
-                    <path d="M8 4V0L3 5l5 5V6c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H0c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8Z" fill="#5C6870"/>
+                  <svg width="16" height="20">
+                    <use xlink:href="img/sprite.svg#replay"></use>
                   </svg>
                 </button>
                 <button class="panel-button panel-button--subtitles" type="button">
                   <span class="visually-hidden">Включение и выключение субтитров</span>
-                  <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 20" width="32" height=20>
-                    <path d="M29 0H3C1.3 0 0 1.3 0 3v14c0 1.7 1.3 3 3 3h26c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3ZM14.4 15.9c-.5.1-1.1.1-1.7.1-.7 0-1.4-.1-2-.3-.6-.2-1.2-.6-1.6-1-.4-.4-.8-1.1-1.1-1.9-.3-.8-.4-1.7-.4-2.8 0-1.1.2-2.1.5-2.9.3-.8.7-1.4 1.2-1.9s1.1-.8 1.7-1c.5-.1 1.2-.2 1.8-.2.7 0 1.2 0 1.7.1s.8.2 1.1.3l-.4 1.9-.9-.3H13c-.9 0-1.6.3-2.2 1-.6.7-.8 1.7-.8 3 0 .6.1 1.1.2 1.6s.3.9.6 1.3c.3.3.6.6 1 .8.4.2.9.3 1.4.3.5 0 .9 0 1.3-.1.3-.1.6-.2.9-.4l.5 1.8c-.5.3-1 .4-1.5.6Zm8.7 0c-.5.1-1.1.1-1.7.1-.7 0-1.4-.1-2-.3-.6-.2-1.2-.6-1.6-1-.5-.5-.9-1.1-1.1-1.9-.3-.8-.4-1.7-.4-2.8 0-1.1.2-2.1.5-2.9.3-.8.7-1.4 1.2-1.9s1.1-.8 1.7-1c.5-.1 1.2-.2 1.8-.2.7 0 1.2 0 1.7.1s.8.2 1.1.3l-.4 1.9L23 6h-1.3c-.9 0-1.6.3-2.2 1-.6.7-.8 1.7-.8 3 0 .6.1 1.1.2 1.6s.3.9.6 1.3c.3.3.6.6 1 .8.4.2.9.3 1.4.3.5 0 .9 0 1.3-.1.3-.1.6-.2.9-.4l.5 1.8c-.5.3-1 .4-1.5.6Z" fill="#5C6870"/>
+                  <svg width="32" height="20">
+                    <use xlink:href="img/sprite.svg#subtitles"></use>
                   </svg>
                 </button>
                 <button class="panel-button panel-button--full-screen" type="button">
                   <span class="visually-hidden">Показать во весь экран</span>
-                  <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
-                    <path d="M0 0v6h3V3h3V0H0ZM3 14H0v6h6v-3H3v-3ZM17 0h-3v3h3v3h3V0h-3ZM17 17h-3v3h6v-6h-3v3Z" fill="#5C6870"/>
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#fullscreen"></use>
                   </svg>
                 </button>
               </div>
@@ -175,29 +179,38 @@
             <li class="social__item">
               <a class=" button social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Twitter</span>
+                <svg width="20" height="19">
+                  <use xlink:href="img/sprite.svg#twitter">
+                </svg>
               </a>
             </li>
+            </style>
             <li class="social__item">
               <a class="button social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Facebook</span>
+                <svg width="20" height="19">
+                  <use xlink:href="img/sprite.svg#facebook">
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="button social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
+                <svg width="20" height="19">
+                  <use xlink:href="img/sprite.svg#youtube">
+                </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="visually-hidden">HTML Academy</span>
-              <svg class="copyright__logo" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 35">
-                <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/>
-              </svg>
-            </a>
-          </p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            Разработано
+            <span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__logo" width="27" height="35">
+              <use xlink:href="img/sprite.svg#htmlacademy">
+            </svg>
+          </a>
         </div>
       </footer>
     </div>

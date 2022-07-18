@@ -10,6 +10,21 @@
   max-width: 483px;
   margin: 0 auto;
   padding: 32px 12px 11px 11px;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::after{
+      background-image: url("../../img/index/intro-triangle-down.svg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: 100%;
+      width: 768px;
+      height: 37px;
+      position: absolute;
+      content: "";
+      z-index: 1;
+    }
+  }
 }
 
 .advantages__slogan {

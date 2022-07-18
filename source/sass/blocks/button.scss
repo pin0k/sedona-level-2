@@ -5,7 +5,9 @@
   line-height: 26px;
   color: $basic-white;
   background-color: $basic-blue;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   text-transform: uppercase;
 }

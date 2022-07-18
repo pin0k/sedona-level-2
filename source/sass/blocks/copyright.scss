@@ -11,14 +11,23 @@
 }
 
 .copyright__link {
-  display: inline-block;
-  margin-left: 15px;
-  width: 27px;
-  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 26px;
+  color: $basic-dark;
+  margin: 0;
+
+  &:hover,
+  &:active {
+    color: $basic-blue;
+  }
+
+  &:focus {
+    color: $basic-dark;
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo {
-  &:hover path {
-    fill: $basic-blue;
-  }
+  margin-left: 15px;
 }

@@ -84,30 +84,35 @@
   border: none;
   background-color: $basic-grey-100;
   z-index: 1;
+  color: $basic-grey-700;
 
-  @media (min-width: $mobile-width-only) {
-    &:hover path {
-      fill: $basic-grey-500;
-    }
-
-    &:active path {
-      fill: rgba($basic-grey-500, 0.3);
-    }
+  svg {
+    fill: currentColor;
   }
 
+  &:hover svg,
+  &:active svg {
+    fill: $basic-grey-500;
+  }
+
+  &:focus svg {
+    fill: rgba($basic-grey-500, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
 
-    path {
+
+    svg {
       fill: $basic-white;
     }
 
-    &:hover path {
+    &:hover svg,
+    &:active svg {
       fill: rgba($basic-white, 0.6);
     }
 
-    &:active path {
+    &:focus svg {
       fill: rgba($basic-white, 0.3);
     }
   }

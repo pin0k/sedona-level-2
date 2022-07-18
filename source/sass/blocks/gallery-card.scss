@@ -121,10 +121,11 @@
   }
 }
 
-.gallery-card__likes path {
+.gallery-card__likes {
+  opacity: 0.3;
 
   @media (min-width: $desktop-width) {
-    fill: white;
+    fill: $basic-white;
     opacity: 1;
   }
 }
