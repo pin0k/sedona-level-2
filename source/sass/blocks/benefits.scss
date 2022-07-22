@@ -4,17 +4,26 @@
   background-color: $basic-white;
   color: $basic-dark;
 
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    column-gap: 30px;
   }
 }
 
 .benefits__item {
   text-align: left;
   position: relative;
-  margin: 15px 0 15px 50px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
 
   &::before {
     position: absolute;
@@ -29,8 +38,8 @@
     @media (min-width: $tablet-width) {
       width: 75px;
       height: 75px;
-      top: -98px;
-      left: calc(50% - 38px);
+      top: -100px;
+      left: calc(50% - 40px);
       background-size: contain;
     }
   }
@@ -50,22 +59,39 @@
 
 .benefits__item--souvenirs {
   &::before {
-    background-image: url("../../img/icon/icon-burger.svg");
+    background-image: url("../../img/icon/icon-gift.svg");
   }
 }
 
 .benefits__item--meal {
   &::before {
-    background-image: url("../../img/icon/icon-gift.svg");
+    background-image: url("../../img/icon/icon-burger.svg");
+  }
+
+  @media (max-width: $mobile-width-only) {
+    order: 1;
   }
 }
 
 .benefits__title {
+  font-size: 21px;
+  line-height: 26px;
   margin: 0;
-  padding-top: 11px;
+  padding-top: 10px;
 }
 
 .benefits__description {
-  margin: 0;
-  padding-top: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto;
+  padding-top: 16px;
+  max-width: 300px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 195px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 290px;
+  }
 }

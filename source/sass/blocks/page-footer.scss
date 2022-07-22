@@ -1,5 +1,5 @@
 .page-footer {
-  margin: 36px 20px;
+  margin: 34px 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -7,7 +7,7 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     align-items: center;
-    margin: 36px 60px;
+    margin: 28px 60px;
   }
 
   @media (min-width: $desktop-width) {

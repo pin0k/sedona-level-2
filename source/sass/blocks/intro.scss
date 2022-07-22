@@ -14,7 +14,7 @@
   background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: cover, 100%;
+  background-size: 1200px, 100%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/back-mobile@2x.jpg");
@@ -53,7 +53,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/background-intro@1x.jpg");
     min-height: 518px;
-    background-size: 100%, cover;
+    background-size: 1200px, cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/background-intro@2x.jpg");

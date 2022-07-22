@@ -1,29 +1,26 @@
 .advantages {
   margin: 0;
-  margin-bottom: 33px;
   text-align: center;
-  font-size: 18px;
   position: relative;
+  padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
 }
 
 .advantages__wrapper {
-  max-width: 483px;
-  margin: 0 auto;
-  padding: 32px 12px 11px 11px;
+  max-width: 500px;
+  margin: 0 11px 13px 11px;
   position: relative;
 
-  @media (max-width: $mobile-width-only) {
-    &::after{
-      background-image: url("../../img/index/intro-triangle-down.svg");
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      background-size: 100%;
-      width: 768px;
-      height: 37px;
-      position: absolute;
-      content: "";
-      z-index: 1;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
   }
 }
 
@@ -36,6 +33,7 @@
 }
 
 .advantages__text {
+  font-size: 14px;
   line-height: 26px;
   margin: 0;
 }
@@ -59,12 +57,18 @@
       height: 37px;
       top: 0;
       left: 0;
+      z-index: 1;
     }
   }
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 54px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 44px 0 0 0;
   }
 }
 
@@ -72,6 +76,15 @@
   background-color: $basic-grey-200;
   counter-increment: advantages;
   position: relative;
+  box-sizing: border-box;
+  min-height: 256px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 26px 22px;
+    min-height: 117px;
+  }
 
   &:nth-child(n+3):not(:last-child) {
     position: relative;
@@ -94,6 +107,20 @@
       padding: 0;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: auto 43px auto 42px;
+  }
+}
+
+.advantages__nowrap {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .advantages__item--image {
@@ -103,18 +130,17 @@
 
   @media (max-width: $mobile-width-only) {
     padding-top: 37px;
-  }
 
-  @media (max-width: $mobile-width-only) {
     &:first-child {
       padding-top: 71px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    grid-column: 1/-1;
+    grid-column: span 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
   }
 
   &::after {
@@ -124,6 +150,11 @@
     background-position: center bottom;
     background-size: cover;
     grid-column: span 2;
+    min-height: 256px;
+
+    @media (max-width: $mobile-width-only) {
+      min-height: 260px;
+    }
   }
 }
 
@@ -145,6 +176,9 @@
 
 .advantages__item--image:nth-child(2)::after {
   background-image: url("../../img/index/photo-bridge-tablet@1x.jpg");
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/index/photo-bridge-tablet@2x.jpg");
@@ -161,20 +195,20 @@
 
 .advantages__item-wrapper {
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 39px;
+    padding-bottom: 32px;
+    min-height: 117px;
   }
-
-  grid-column: 1/2;
-  min-height: 256px;
+  min-height: 170px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  padding: 0 30px;
 }
 
 .advantages__title {
-  margin: 0;
+  margin: 0 0 12px 0;
+  line-height: 26px;
 }
 
 .advantages__description {
@@ -182,6 +216,15 @@
   font-size: 14px;
   line-height: 21px;
   position: relative;
+  max-width: 300px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 195px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 290px;
+  }
 
   &::before {
     display: block;
@@ -191,11 +234,22 @@
 }
 
 .advantages__city-benefits {
-  padding: 9px 20px;
+  background-color: $basic-white;
+
+  @media (max-width: $mobile-width-only) {
+    order: 1;
+    padding: 26px 20px 30px 71px;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-row: 2/3;
+    padding: 0 15px 60px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //max-width: 290px;
+    padding: 0 15px 73px 15px;
   }
 }
 
