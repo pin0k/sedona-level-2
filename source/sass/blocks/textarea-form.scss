@@ -1,3 +1,8 @@
+.textarea-form {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
 .textarea-form__input {
   text-transform: none;
   font-size: 18px;
@@ -12,4 +17,12 @@
   margin-bottom: 5px;
   box-sizing: border-box;
   padding: 18px 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }

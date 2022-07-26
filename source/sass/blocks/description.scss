@@ -5,7 +5,7 @@
 
   @media (max-width: $mobile-width-only) {
     margin-top: 56px;
-    padding-bottom: 12px;
+    padding-bottom: 4px;
     border-bottom: 1px solid #d6d6d6;
   }
 
@@ -29,10 +29,16 @@
     @media (min-width: $tablet-width) {
       background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/background-intro@1x.jpg");
       height: 290px;
+      background-size: 1200px, auto;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/index/intro-triangle.svg"), url("../../img/index/background-intro@2x.jpg");
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 300px;
+      background-size: 1200px, cover;
     }
 
   }
@@ -52,14 +58,18 @@
     @media (min-width: $tablet-width) {
       width: 457px;
       height: 78px;
-      left: calc(50% - 228px);
+      left: calc(50% - 230px);
       top: 95px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 100px;
     }
   }
 }
 
 .description-wrapper {
-  padding: 158px 20px 12px 20px;
+  padding: 158px 20px 32px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 290px 0 0 0;
@@ -67,23 +77,42 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 355px 0 0 0;
+    top: 100px;
+  }
 }
 
 .description__title {
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
-  margin-top: 24px;
-  margin-bottom: 20px;
+  margin-top: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 26px;
     margin-top: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+  }
 }
 
 .description__text {
   line-height: 24px;
-  margin: 30px 0;
+  margin: 30px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 32px 0 30px 0;
+  }
+}
+
+.capture-unit__nowrap {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+  display: none;
 }

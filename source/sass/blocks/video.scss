@@ -1,13 +1,15 @@
 .video {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-top: 65px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 85px;
   }
 }
 
@@ -15,7 +17,11 @@
   margin: 32px 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 32px 60px;
+    margin: 72px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 62px 60px 102px 60px;
   }
 }
 
@@ -24,6 +30,10 @@
   font-weight: bold;
   line-height: 26px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__text {
@@ -31,6 +41,8 @@
   margin: 20px 0;
 
   @media (min-width: $tablet-width) {
+    margin: 30px 0 20px 0;
+
     br {
       display: none;
     }

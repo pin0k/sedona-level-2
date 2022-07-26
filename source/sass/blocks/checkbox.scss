@@ -2,6 +2,11 @@
   position: relative;
   padding: 15px 0 0 79px;
 
+  @media (min-width: $tablet-width) {
+    min-width: 200px;
+    box-sizing: border-box;
+  }
+
   &::before {
     position: absolute;
     content: "";

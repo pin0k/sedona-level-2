@@ -61,7 +61,7 @@
 .gallery-card__signature {
 
   @media (min-width: $tablet-width) {
-    padding: 22px 7px 15px 20px;
+    padding: 15px 25px 15px 20px;
     display: grid;
     grid-template-columns: 2fr, 1fr;
     grid-template-rows: auto;
@@ -79,7 +79,7 @@
 }
 
 .gallery-card__title {
-  margin: 11px 0;
+  margin: 11px 0 0 0;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
@@ -102,6 +102,7 @@
 .gallery-card__count-likes {
   font-weight: bold;
   line-height: 24px;
+  margin-top: 8px;
 
   @media (min-width: $tablet-width) {
     min-width: 77px;

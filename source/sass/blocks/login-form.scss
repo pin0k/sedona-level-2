@@ -9,6 +9,12 @@
   }
 }
 
+.login-form__title {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 20px;
+  }
+}
+
 .login-form__label {
   line-height: 26px;
   color: $basic-grey-500;

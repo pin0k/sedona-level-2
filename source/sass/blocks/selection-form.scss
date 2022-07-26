@@ -1,3 +1,15 @@
+.selection-form {
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
 .radio__label,
 .checkbox__label {
   text-transform: none;
@@ -9,7 +21,7 @@
 
 .selection-form__field {
   min-height: 48px;
-  margin: 21px 0;
+  margin: 25px 0;
   display: flex;
 
   &:first-child {
@@ -20,29 +32,40 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    margin: 30px 0;
+  }
 }
 
 .selection-form__field--attractions {
   @media (min-width: $tablet-width) {
-    flex-basis: 35%;
+    flex-basis: 40%;
+    margin: 0 25px 40px 25px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
 
-    &:nth-child(odd) {
-      margin-right: 40px;
+    &:nth-child(even) {
+      justify-content: start;
+    }
+
+    &:last-of-type {
+      margin-bottom: 40px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: auto;
+    flex-basis: 25%;
     min-width: 226px;
-    margin: 0;
+    margin: 0 0 20px 0;
 
-    &:nth-child(odd),
-    &:nth-child(even) {
-      margin-right: 14px;
+    &:nth-child(odd) {
+      margin-right: 0;
     }
 
     &:last-of-type {
-      margin-right: 0;
+      margin-bottom: 20px;
     }
   }
 }
