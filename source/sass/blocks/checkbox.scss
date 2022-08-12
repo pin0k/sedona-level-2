@@ -22,13 +22,13 @@
 
 .checkbox__input:checked + .checkbox__label::after {
   position: absolute;
-    content: "";
-    width: 24px;
-    height: 17px;
-    top: 20px;
-    left: 17px;
-    background-image: url("../../img/icon/tick.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 23px 16px;
+  content: "";
+  width: 24px;
+  height: 17px;
+  top: 20px;
+  left: 17px;
+  background-image: url("../../img/icon/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 23px 16px;
 }

@@ -40,14 +40,12 @@
 }
 
 .gallery-list__item:first-child {
-
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
   }
 }
 
 .gallery-list__item:nth-child(odd):not(:first-child) {
-
   @media (min-width: $tablet-width) {
     background-color: $basic-grey-400;
   }

@@ -37,6 +37,10 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -79,7 +83,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 4px;
     right: 0;
     width: 23px;
     height: 4px;
@@ -98,7 +102,7 @@
   &:hover::before,
   &:hover::after {
     opacity: 0.6;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   &:focus-visible::before,
@@ -117,10 +121,4 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.main-nav__toggle {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }

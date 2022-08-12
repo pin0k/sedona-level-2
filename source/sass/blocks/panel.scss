@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-      width: 540px;
+    width: 540px;
   }
 }
 
@@ -48,15 +48,13 @@
   @media (min-width: $tablet-width) {
     left: 28%;
   }
-}
 
-.panel__handle {
   &:hover {
-      background-color: rgba($basic-white, 0.6);
+    background-color: rgba($basic-white, 0.6);
   }
 
   &:active {
-      background-color: rgba($basic-white, 0.3);
+    background-color: rgba($basic-white, 0.3);
   }
 }
 

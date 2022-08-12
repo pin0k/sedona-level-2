@@ -93,12 +93,12 @@
 
 .contact-form__input--phone {
   background-image: url("../../img/icon/icon-phone.svg"),
-                    linear-gradient(to right, $basic-grey-100 calc(100% - 58px), $basic-grey-350 calc(100% - 58px) 100%);
+    linear-gradient(to right, $basic-grey-100 calc(100% - 58px), $basic-grey-350 calc(100% - 58px) 100%);
   background-size: 18px 18px, 100% 100%;
 }
 
 .contact-form__input--email {
   background-image: url("../../img/icon/icon-mail.svg"),
-                    linear-gradient(to right, $basic-grey-100 calc(100% - 58px), $basic-grey-350 calc(100% - 58px) 100%);
+    linear-gradient(to right, $basic-grey-100 calc(100% - 58px), $basic-grey-350 calc(100% - 58px) 100%);
   background-size: 16px 12px, 100% 100%;
 }

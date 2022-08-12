@@ -118,6 +118,7 @@
 
 .advantages__nowrap {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
@@ -176,6 +177,7 @@
 
 .advantages__item--image:nth-child(2)::after {
   background-image: url("../../img/index/photo-bridge-tablet@1x.jpg");
+
   @media (min-width: $tablet-width) {
     order: -1;
   }

@@ -11,7 +11,6 @@
 }
 
 .gallery-card__image-top {
-
   @media (min-width: $desktop-width) {
     display: block;
     width: 100%;
@@ -21,7 +20,6 @@
 }
 
 .gallery-card__image-wrapper {
-
   @media (min-width: $tablet-width) {
     display: block;
     width: 100%;
@@ -59,7 +57,6 @@
 }
 
 .gallery-card__signature {
-
   @media (min-width: $tablet-width) {
     padding: 15px 25px 15px 20px;
     display: grid;
@@ -71,8 +68,8 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     bottom: 0;
-    color: white;
-    background: rgba(0,0,0, 0.3);
+    color: var($basic-white);
+    background: rgba(0, 0, 0, 0.3);
     width: 100%;
     box-sizing: border-box;
   }
@@ -135,6 +132,6 @@
   margin-left: 15px;
 
   @media (min-width: $tablet-width) {
-      margin-top: 10px;
+    margin-top: 10px;
   }
 }

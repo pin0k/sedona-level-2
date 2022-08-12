@@ -52,6 +52,7 @@
 
 .capture-unit__nowrap {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
   }

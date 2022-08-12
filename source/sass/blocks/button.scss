@@ -1,5 +1,5 @@
 .button {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -10,9 +10,7 @@
   align-items: center;
   border: none;
   text-transform: uppercase;
-}
 
-.button {
   &:hover {
     background-color: $blue-hover;
   }
@@ -28,6 +26,7 @@
 
 .button--disabled {
   background-color: $grey-disabled;
+
   &:hover,
   &:active {
     background-color: $grey-disabled;
