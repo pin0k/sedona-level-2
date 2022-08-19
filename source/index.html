@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.png">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -116,8 +116,8 @@
           <h2 class="visually-hidden">Как проехать в Седону</h2>
           <picture>
             <source media="(min-resolution: 2dppx)" srcset="img/index/map-mobile@2x.jpg">
-            <img src="img/index/map-mobile@1x.jpg" alt="Аризона, город Седона" width="320" height="350">
-            <!--iframe width="1200" height="474" class="map" allowfullscreen title="Аризона, город Седона" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18518.24879908678!2d-111.79683013575944!3d34.86640680662824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1639623973554!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe-->
+            <img class="visually-hidden" rc="img/index/map-mobile@1x.jpg" alt="Аризона, город Седона" width="320" height="350" alt="Аризона, город Седона" class="map" loading="lazy">
+            <iframe width="1200" height="474" class="map" allowfullscreen title="Аризона, город Седона" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18518.24879908678!2d-111.79683013575944!3d34.86640680662824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1639623973554!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </picture>
         </section>
       </main>
@@ -132,7 +132,7 @@
               <a class=" button social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Twitter</span>
                 <svg width="20" height="19">
-                  <use xlink:href="img/sprite.svg#twitter">
+                  <use xlink:href="img/sprite.svg#icon-twitter">
                 </svg>
               </a>
             </li>
@@ -141,7 +141,7 @@
               <a class="button social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Facebook</span>
                 <svg width="20" height="19">
-                  <use xlink:href="img/sprite.svg#facebook">
+                  <use xlink:href="img/sprite.svg#icon-facebook">
                 </svg>
               </a>
             </li>
@@ -149,7 +149,7 @@
               <a class="button social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
                 <svg width="20" height="19">
-                  <use xlink:href="img/sprite.svg#youtube">
+                  <use xlink:href="img/sprite.svg#icon-youtube">
                 </svg>
               </a>
             </li>
@@ -166,6 +166,6 @@
         </div>
       </footer>
     </div>
-    <script src="/js/navigation.js"></script>
+    <script src="/js/navigation.min.js"></script>
   </body>
 </html>
