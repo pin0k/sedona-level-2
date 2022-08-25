@@ -12,8 +12,12 @@
   height: 84px;
   position: absolute;
   left: calc(50% - 51px);
-  top: 0;
+  bottom: -84px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     width: 187px;

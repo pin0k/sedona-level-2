@@ -58,7 +58,9 @@
   @media (min-width: $desktop-width) {
     flex-basis: 25%;
     min-width: 226px;
-    margin: 0 0 20px 0;
+    margin: 0 auto 20px auto;
+    box-sizing: border-box;
+    outline: 5px solid black;
 
     &:nth-child(odd) {
       margin-right: 0;
